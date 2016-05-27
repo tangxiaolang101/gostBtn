@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #333;
+}
+
+.box{
+	width:1000px;
+	height: 280px;
+	margin: 50px auto;
+}
+.box .link{
+	width: 205px;
+	height: 280px;
+	margin: 0 20px;
+	float: left;
+	
+}
+.link .icon{
+	display: inline-block;
+	width: 100%;
+	height: 190px;
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+	
+}
+.link-miss .icon{
+	background: url(../img/mission.png) no-repeat center center;
+}
+
+.link-play .icon{
+	background: url(../img/play.png) no-repeat center center;
+}
+
+.link-touch .icon{
+	background: url(../img/touch.png) no-repeat center center;
+}
+
+.link .icon:hover{
+	transform: rotate(360deg) scale(1.2);
+	-webkit-transform: rotate(360deg) scale(1.2);	
+}
+
+.button{
+	display: block;
+	width: 180px;
+	height: 50px;
+	text-decoration: none;
+	line-height: 50px;
+	color: #2DCB70;
+	font-family: "微软雅黑", arial, helvetica, sans-serif;
+	font-weight: bolder;
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	padding-left: 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: url(../img/allow.png) 130px center no-repeat;
+	transition:  0.5s ease;
+	-webkit-transition:  0.5s ease;
+	position: relative;
+}
+
+.button:hover{
+	border: 2px solid rgba(255,255,255,1);
+	background-position: 140px center;
+	
+}
+/*
+ top:
+ 1、高度不变；2、宽度变；3、位置：左右
+ */
+.button .line{
+	display: block;
+	position: absolute;
+	background: none;
+	transition:  0.4s ease;
+	-webkit-transition:  0.4s ease;
+	
+}
+.button:hover .line{
+	background: #fff;
+}
+
+.button .line-top{
+	height: 2px;
+	width: 0px;
+	left: -110%;
+	top: -2px;
+}
+.button:hover .line-top{
+	width: 100%;
+	left: 0px;	
+}
+.button .line-left{
+	height: 0px;
+	width: 2px;
+	bottom: -110%;
+	left: -2px;
+}
+.button:hover .line-left{
+	height: 100%;
+	bottom: 0px;	
+}
+
+.button .line-right{
+	height: 0px;
+	width: 2px;
+	top: -110%;
+	right: -2px;
+}
+
+.button:hover .line-right{
+	height: 100%;
+	top: 0px;	
+}
+
+.button .line-bottom{
+	height: 2px;
+	width: 0px;
+	right: -110%;
+	bottom: -2px;
+}
+
+.button:hover .line-bottom{
+	width: 100%;
+	right: 0px;	
+}
