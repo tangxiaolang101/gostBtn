@@ -9,13 +9,14 @@ body{
 .box{
 	width:1000px;
 	height: 280px;
-	margin: 50px auto;
+	margin: 50px auto;	
 }
 .box .link{
 	width: 205px;
 	height: 280px;
 	margin: 0 20px;
 	float: left;
+	position: relative;
 	
 }
 .link .icon{
@@ -127,4 +128,34 @@ body{
 .button:hover .line-bottom{
 	width: 100%;
 	right: 0px;	
+}
+
+.box .tip{
+	position: absolute;
+	padding: 0px 14px;
+	height: 35px;
+	line-height: 35px;
+	background: #2DCB70;
+	color: #FFFFFF;
+	top: 160px;
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: none;
+	margin: 0 auto;
+	border-radius: 3px;
+	opacity: 0;
+}
+.tip em{
+	font-style: normal;
+}
+.tip span{
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 7px solid transparent;
+	border-top-color: #2DCB70;
+	left: 50%;
+	margin-left:-3px;
+	bottom: -14px;
 }
